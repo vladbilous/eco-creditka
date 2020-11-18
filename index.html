@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://www.ukrgasbank.com/images/favicon.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="fonts/Circe/stylesheet.css" />
+    <!-- boottstrup -->
+    <!-- подключение css-файла -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+    <!-- подключение нужной версии jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <!-- подключение js-файла -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/jquey.3.4.1.min.js"></script>
+    <script src="https://rawgit.com/kottenator/jquery-circle-progress/1.2.2/dist/circle-progress.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <!-- boottstrup -->
+    <title>Eco Creditka</title>
+    <link rel="stylesheet" href="css/ie.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="wrapper">
+        <div class="header_logo">
+                  <img src="img/header-logo.png" alt="logo">
+        </div>
+        <div class="head_txt">
+
+          <img class="" src="img/banner2.png" alt="еко кредитка" />
+        </div>
+
+      </div>
+    </header>
+    <div class="wrapper line-top">
+    </div>
+
+      <div class="title-block">
+        <p class="title-block__order">ЗАМОВИТИ КАРТКУ</p>
+      </div>
+      <div class="wrapper">
+          <div class="wrapper__content">
+              <div class="form-number">
+                <p style="color: black">
+                  *Будь ласка, введіть номер вашого мобільного телефону без пробілів:
+                </p>
+
+                  <form class="form-main">
+                      <br />
+                      <div class="form-main__phone">
+                          <p class="form-main__number"  style="color: black">+38</p>
+                          <p>
+                              <b class="form-main__item">
+                                  <input id="phone-number" type="text" placeholder="Мобільний телефон*" name="phone" />
+
+
+                                  <b id="message" class="form-main__error"></b>
+
+                              </b>
+                          </p>
+                      </div>
+                      <div class="form-main__submit-wrap">
+
+                          <div class="form-main__btn form-main__submit-btn tte">
+                              Відправити
+                          </div>
+
+                          <p class="form-main__status-message">
+                              Ми зв’яжемося з вами протягом найближчого часу
+                          </p>
+                      </div>
+                  </form>
+              </div>
+
+            <form  style="display: none" class="contact-form">
+              <span class="title-form">ПОДАТИ ЗАЯВУ</span>
+
+              <br />
+              <div class="contact-form__phone">
+              <p class="contact-form__number"  style="color: black">+38</p>
+              <p>
+                <b class="contact-form__item">
+                  <input type="text" placeholder="Мобільний телефон*" name="phone" />
+                  <b class="contact-form__error">Неправильно вказаний телефон</b>
+                </b>
+              </p>
+              </div>
+              <div class="contacts-form__submit-wrap">
+                <button class="contacts-form__submit-btn" type="submit">
+                  Відправити
+                </button>
+                <p class="contacts-form__status-message">
+                  Ми зв’яжемося з вами протягом найближчого часу
+                </p>
+              </div>
+            </form>
+
+
+              <div class="check-code">
+                  <b class="check-code__title">Введіть пароль з СМС-повідомлення:</b>
+                  <br>
+                  <input name="code" maxlength="1" onkeyup="jmp(this);" autocomplete="off"  pattern="[0-9]*" class="check-code__input" value="">
+                  <input name="code" maxlength="1" onkeyup="jmp(this);" autocomplete="off" pattern="[0-9]*" class="check-code__input" value="">
+                  <input name="code" maxlength="1" onkeyup="jmp(this);" autocomplete="off" pattern="[0-9]*" class="check-code__input" value="">
+                  <input name="code" maxlength="1" onkeyup="jmp(this);" autocomplete="off" pattern="[0-9]*" class="check-code__input" value="">
+
+                <br>
+                  <p class="error-code">Код не вірний</p>
+                <br>
+                  <button class="check-code__button" type="submit">
+                      Відправити
+                  </button>
+
+                  <p class="form-main__btn check-code-text">Надіслати пароль ще раз</p>
+              </div>
+              <div class="thanks">
+                  <div>
+                      <img src="img/phone-sec.png" alt="">
+<!--                      <p>Дякуємо, ми зв’яжемося з Вами вже найближчим часом.</p>-->
+                      <p>Зверніть увагу, що сервіс працює у тестовому режимі.
+                          Можливість замовлення картки наразі доступна у м.Києві та обласних центрах
+                      </p>
+
+                      <button onclick="location.reload()" class="thanks__button" type="submit">
+                          Повернутись на головну
+                      </button>
+                  </div>
+              </div>
+              <div class="thanks-client">
+                  <div style="color: #787878">
+                      <img src="img/phone-sec.png" alt="">
+
+                      <div>
+                      <p>
+                          <br>
+
+                          Дякуємо, що Ви є клієнтом УКРГАЗБАНКУ.<br>
+                          Ми зв'яжемося з Вами вже найближчим часом.
+                      </p>
+<!--                      <p>Зверніть увагу, що замовити кредитну карту УКРГАЗБАНКУ у декілька кліків Ви можете не виходячи з дому у нашому мобільному додатку ЕКОБАНК ОНЛАЙН. </p>-->
+                  </div>
+
+                  <p class="thanks-client__download">
+                      Завантажуйте додаток за посиланням<br>
+                      Iphone: <a target="_blank" href="https://apple.co/2MbYdaN"> https://apple.co/2MbYdaN</a>
+                      <br>
+                      Android: <a target="_blank" href="http://bit.ly/2MeOLn4"> http://bit.ly/2MeOLn4</a>
+                      <br>
+                      прямо зараз у Ваш смартфон та користуйтесь перевагами наших продуктів та послуг онлайн 24/7.
+                  </p>
+                    <br>
+
+                  <button onclick="location.reload()" class="thanks__button" type="submit">
+                      Повернутись на головну
+                  </button>
+
+                  </div>
+              </div>
+
+              <div class="verification">
+                  <div>
+                      <p class="color-gray">Верифікація</p>
+                      <p><b>Бажаєте пройти відеоверифікацію?</b></p>
+
+                      <img class="verification__yes" src="img/verification-img1.png" alt="">
+                      <img class="verification__no" src="img/verification-img2.png" alt="">
+                        <p class="verification__text color-gray">
+                            Для проходження відеоверифікації, будь-ласка, підготуйте оригінали Ваших документів
+                            (паспорт або ІD-картка, а також інший документ, що посвідчує особу – закордонний паспорт чи водійські права).
+                        </p>
+                  </div>
+              </div>
+              <div class="contact-data">
+                  <p><b>Заповніть, будь ласка, анкету:</b></p>
+                  <form class="contact-data__form">
+                      <p>
+                          <input type="text" placeholder="Прізвище*" name="surname" id="contact-data__surname" value=""/>
+                            <span id="contact-data__form-error-sname"></span>
+
+                          <input type="number" placeholder="Ідентифікаційний номер*" name="id-number" id="contact-data__id-number"  value=""/>
+                          <span id="contact-data__form-error-id-number"></span>
+
+
+
+                      </p>
+                      <p>
+                          <input type="text" placeholder="Ім'я*" name="name" id="contact-data__name"  value=""/>
+                            <span id="contact-data__form-error-name"></span>
+
+                      <input type="email" placeholder="Email" name="email" id="contact-data__email"  value=""/>
+                      </p>
+                      <p>
+                          <input type="text" placeholder="По батькові*" name="middle-name" id="contact-data__middle-name" value=""/>
+                          <span id="contact-data__form-error-mname"></span>
+
+                      </p>
+                      <br>
+                      <br>
+
+                      <div class="contact-data__button">
+                          Відправити
+                      </div>
+                  </form>
+
+              </div>
+
+              <div class="block-first-questions">
+                  <div class="first-questions-forms">
+                      <div class="one-first-question">
+                          <p> 1) Оберіть Ваш соціальний статус із наступних варіантів:</p>
+                          <form class="form-first-question" name="formFirstQuestion">
+                              <label>Найманий працівник
+                                  <input type="checkbox" class="check-radio" name="t8" value="Найманий працівник">
+                                  <span class="checkbox-mod"></span>
+                              </label>
+                              <label>Пенсіонер
+                                  <input type="checkbox" class="check-radio" name="t8" value="Пенсіонер">
+                                  <span class="checkbox-mod"></span>
+                              </label>
+                              <label>
+                                  <span>Самостійно зайнятий працівник (незалежна проф.діяльність)</span>
+                                  <input type="checkbox" class="check-radio" name="t8" value="Самостійно зайнятий працівник (незалежна проф.діяльність)">
+                                  <span class="checkbox-mod">
+                                  </span>
+                              </label>
+                              <label>Приватний підприємець
+                                  <input type="checkbox" class="check-radio" name="t8" value="Приватний підприємець">
+                                  <span class="checkbox-mod"></span>
+                              </label>
+                              <label>Безробітний
+                                  <input type="checkbox" class="check-radio" name="t8" value="Безробітний">
+                                  <span class="checkbox-mod"></span>
+                              </label>
+                          </form>
+
+                      </div>
+                      <div class="second-first-question">
+                          <p> 2) Вкажіть мету оформлення кредитної картки із наступних варіантів:</p>
+                          <form class="form-second-first-question" name="formSecondFirstQuestion">
+                              <label>Для регулярного використання
+                                  <input type="checkbox" class="check-radio" name="t1" value="Для регулярного використання">
+                                  <span class="checkbox-mod"></span>
+                              </label>
+                              <label>Для значної покупки
+                                  <input type="checkbox" class="check-radio" name="t1" value="Для значної покупки">
+                                  <span class="checkbox-mod"></span>
+                              </label>
+                              <label>У разі непередбачуваних витрат
+                                  <input type="checkbox" class="check-radio" name="t1" value="У разі непередбачуваних витрат">
+                                  <span class="checkbox-mod"></span>
+                              </label>
+                          </form>
+                      </div>
+                  </div>
+
+                  <div class="err-mes">Виберіть будь ласка з варіантів</div>
+
+                  <div class="send-first-question green-button">
+                      Відправити
+                  </div>
+
+              </div>
+
+              <div class="employees-questions">
+                <div class="first-employees-question">
+                    <h5 style="color: red; text-align: center">Наймані працівники</h5>
+                    <form class="form-first-employees-question" name="formSecondFirstQuestion">
+                        <label>
+                            1) Зазначте Ваше місце роботи та посаду:
+                            <p>
+                                <input id="employeesWork" type="text">
+                            </p>
+                        </label>
+
+                        <label class="label-employees-status">
+                            2) Зазначте Ваш сімейний стан (обрати відповідь із наступних варіантів):
+                            <p>
+                                <select id="employeesStatus" name="status">
+                                    <option selected disabled> </option>
+                                    <option value="Одружений">Одружений</option>
+                                    <option value="Неодружений">Неодружений</option>
+                                    <option value="Вдова">Вдова</option>
+                                    <option value="Розлучений">Розлучений</option>
+                                    <option value="В громадянському шлюбі">В громадянському шлюбі</option>
+                                </select>
+                            </p>
+                        </label>
+
+                        <label class="label-employees-register-address">
+                            3) Адреса реєстрації співпадає з адресою фактичного проживання?
+                            <p>
+                                <select id="registerAddress" name="adress">
+                                    <option selected disabled> </option>
+                                    <option value="Так">Так</option>
+                                    <option value="Ні">Ні</option>
+                                </select>
+                            </p>
+                        </label>
+                        <label class="register-adress select-adress-block select-adress-none">
+                            3a) Зазначте Вашу фактичну адресу місця проживання
+                            <p>
+                                <input id="employeesActualAddress" type="text">
+                            </p>
+                        </label>
+
+                        <label>
+                            4) Ваш середньомісячний дохід становить: (обрати відповідь із наступних варіантів):
+                            <p>
+                                <select id="monthlyIncome" name="monthlyIncome">
+                                    <option selected disabled > </option>
+                                    <option value="Менше 5 тис.грн">Менше 5 тис.грн</option>
+                                    <option value="від 5 до 20 тис.грн">від 5 до 20 тис.грн</option>
+                                    <option value="понад 20 тис.грн">понад 20 тис.грн</option>
+                                </select>
+                            </p>
+                        </label>
+                        <label>
+                            5) Зазначте обсяг (в т.ч. очікуваний) надходження коштів та інших цінностей на Ваші рахунки:
+                            <p>
+                                <select id="expectedRevenue" name="expectedRevenue">
+                                    <option selected disabled> </option>
+                                    <option value="до 50 тис.грн.">до 50 тис.грн.</option>
+                                    <option value="від 50 до 150 тис.грн.">від 50 до 150 тис.грн.</option>
+                                    <option value="більше 150 тис.грн.">більше 150 тис.грн.</option>
+                                </select>
+                            </p>
+                        </label>
+                        <label>
+                            6) Чи володієте Ви будь-яким рухомим/нерухомим майном?*
+                            <p>
+                                <select id="you-own-movable-property" name="youOwnMovableProperty">
+                                    <option selected disabled> </option>
+                                    <option value="Так">Так</option>
+                                    <option value="Ні">Ні</option>
+                                </select>
+                            </p>
+                        </label>
+                        <label class="maino select-maino-block select-maino-none">
+                            6a) Якою саме власністю з переліченого ви володієте? (обрати відповідь з наступних варіантів):
+                            <p>
+                                <select id="listedProperty" name="listedProperty">
+                                    <option selected disabled value="неактив"></option>
+                                    <option value="Земельна ділянка">Земельна ділянка</option>
+                                    <option value="Заміський будинок">Заміський будинок</option>
+                                    <option value="Квартира загал.площею до 100,0кв.м.">Квартира загал.площею до 100,0кв.м.</option>
+                                    <option value="Квартира загал.площею понад 100,0кв.м.">Квартира загал.площею понад 100,0кв.м.</option>
+                                    <option value="Автотранспорт іноземного вир-ва">Автотранспорт іноземного вир-ва</option>
+                                    <option value="Автотранспорт виробництва України">Автотранспорт виробництва України</option>
+                                </select>
+                            </p>
+                        </label>
+                        <label> 7) Чи маєте Ви відкриті рахунки з перелічених в інших банках?:
+                            <p>
+                                <select id="openAccounts" name="openAccounts">
+                                    <option selected disabled> </option>
+                                    <option value="Карткові">Карткові</option>
+                                    <option value="Депозитні">Депозитні</option>
+                                    <option value="Кредитні">Кредитні</option>
+                                    <option value="Рахунки в інших банках відсутні">Рахунки в інших банках відсутні</option>
+                                </select>
+                            </p>
+                        </label>
+
+                    </form>
+                </div>
+                  <div class="err-mes">Заповніть будь ласка всі поля</div>
+
+                  <div class="send-employees-question green-button">
+                      Відправити
+                  </div>
+              </div>
+
+              <div class="pensioners-questions">
+                  <div class="block-pensioners-questions">
+                      <h5 style="color: red; text-align: center">Пенсіонери</h5>
+                      <form class="form-pensioners-questions" name="formPensionersQuestions">
+                          <label>
+                              1) Зазначте Ваш сімейний стан (обрати відповідь із наступних варіантів):
+                              <p>
+                                  <select id="pensionerStatus" name="pensionerStatus">
+                                      <option selected disabled> </option>
+                                      <option value="Одружений">Одружений</option>
+                                      <option value="Неодружений">Неодружений</option>
+                                      <option value="Вдова">Вдова</option>
+                                      <option value="Розлучений">Розлучений</option>
+                                      <option value="В громадянському шлюбі">В громадянському шлюбі</option>
+                                  </select>
+                              </p>
+                          </label>
+                          <label>
+                              2) Адреса реєстрації співпадає з адресою фактичного проживання?
+                              <p>
+                                  <select id="pensioner-adress" name="pensionerAdress">
+                                      <option selected disabled> </option>
+                                      <option value="Так">Так</option>
+                                      <option value="Ні">Ні</option>
+                                  </select>
+                              </p>
+                          </label>
+                          <label class="pensioner-register-adress select-pensioner-adress-block select-pensioner-adress-none">
+                              2a) Зазначте Вашу фактичну адресу місця проживання
+                              <p>
+                                  <input id="pensionerActualAddress" type="text">
+                              </p>
+                          </label>
+                          <label>
+                              3) Ваш середньомісячний дохід становить: (обрати відповідь із наступних варіантів):
+                              <p>
+                                  <select id="pensionerMonthlyIncome" name="pensionerMonthlyIncome">
+                                      <option selected disabled> </option>
+                                      <option value="Менше 5 тис.грн">Менше 5 тис.грн</option>
+                                      <option value="від 5 до 20 тис.грн">від 5 до 20 тис.грн</option>
+                                      <option value="понад 20 тис.грн">понад 20 тис.грн</option>
+                                  </select>
+                              </p>
+                          </label>
+                          <label>
+                              4) Зазначте обсяг (в т.ч. очікуваний) надходження коштів та інших цінностей на Ваші рахунки:
+                              <p>
+                                  <select id="pensionerExpectedRevenue" name="pensionerExpectedRevenue">
+                                      <option selected disabled> </option>
+                                      <option value="до 50 тис.грн.">до 50 тис.грн.</option>
+                                      <option value="від 50 до 150 тис.грн.">від 50 до 150 тис.грн.</option>
+                                      <option value="більше 150 тис.грн.">більше 150 тис.грн.</option>
+                                  </select>
+                              </p>
+                          </label>
+                          <label>
+                              5) Чи володієте Ви будь-яким рухомим/нерухомим майном?*
+                              <p>
+                                  <select id="pensioner-own-movable-property" name="pensionerOwnMovableProperty">
+                                      <option selected disabled> </option>
+                                      <option value="Так">Так</option>
+                                      <option value="Ні">Ні</option>
+                                  </select>
+                              </p>
+                          </label>
+                          <label class="pensioner-maino select-pensioner-maino-block select-pensioner-maino-none">
+                              5a) Якою саме власністю з переліченого ви володієте? (обрати відповідь з наступних варіантів):
+                              <p>
+                                  <select id="pensionerListedProperty" name="pensionerListedProperty">
+                                      <option selected disabled value="неактив"></option>
+                                      <option value="Земельна ділянка">Земельна ділянка</option>
+                                      <option value="Заміський будинок">Заміський будинок</option>
+                                      <option value="Квартира загал.площею до 100,0кв.м.">Квартира загал.площею до 100,0кв.м.</option>
+                                      <option value="Квартира загал.площею понад 100,0кв.м.">Квартира загал.площею понад 100,0кв.м.</option>
+                                      <option value="Автотранспорт іноземного вир-ва">Автотранспорт іноземного вир-ва</option>
+                                      <option value="Автотранспорт виробництва України">Автотранспорт виробництва України</option>
+                                  </select>
+                              </p>
+                          </label>
+                          <label>
+                              6) Чи маєте Ви відкриті рахунки з перелічених в інших банках?:
+                              <p>
+                                  <select id="pensionerOpenAccounts" name="pensionerOpenAccounts">
+                                      <option selected disabled> </option>
+                                      <option value="Карткові">Карткові</option>
+                                      <option value="Депозитні">Депозитні</option>
+                                      <option value="Кредитні">Кредитні</option>
+                                      <option value="Рахунки в інших банках відсутні">Рахунки в інших банках відсутні</option>
+                                  </select>
+                              </p>
+                          </label>
+
+
+
+                      </form>
+                  </div>
+                  <div class="err-mes">Заповніть будь ласка всі поля</div>
+
+                  <div class="pensioners-question green-button">
+                      Відправити
+                  </div>
+              </div>
+
+              <div class="self-employed-workers-questions">
+                  <div class="block-self-employed-workers-questions">
+                      <h5 style="color: red; text-align: center">Самостійно зайняті працівники (незалежна проф діяльність - адвокат, нотаріус, тощо)</h5>
+                      <form class="form-self-employed-workers-questions" name="formSelfEmployedWorkersQuestions">
+                          <label>
+                              1) Зазначте рід вашої незалежної професійної діяльності
+                              <p>
+                                  <select id="selfEmployedWorkersProfession" name="self-employed-workers-profession">
+                                      <option selected disabled> </option>
+                                      <option value="приватний нотаріус">приватний нотаріус</option>
+                                      <option value="адвокат">адвокат</option>
+                                      <option value="судовий експерт">судовий експерт</option>
+                                  </select>
+                              </p>
+                          </label>
+                          <label>
+                              2) Зазначте код податкової
+                              <p>
+                                  <input id="selfEmployedWorkersTaxCode" type="text">
+                              </p>
+                          </label>
+                          <label>
+                              3) Зазначте дату з якої Ви проводите професійну діяльність
+                              <p>
+                                  <input id="selfEmployedWorkersDateStartedProfesion" type="text">
+                              </p>
+                          </label>
+                          <label>
+                              4) Зазначте Ваш сімейний стан (обрати відповідь із наступних варіантів):
+                              <p>
+                                  <select id="selfEmployedWorkersStatus" name="self-employed-workers-status">
+                                      <option selected disabled> </option>
+                                      <option value="Одружений">Одружений</option>
+                                      <option value="Неодружений">Неодружений</option>
+                                      <option value="Вдова">Вдова</option>
+                                      <option value="Розлучений">Розлучений</option>
+                                      <option value="В громадянському шлюбі">В громадянському шлюбі</option>
+                                  </select>
+                              </p>
+                          </label>
+                          <label>
+                              5) Адреса реєстрації співпадає з адресою фактичного проживання?
+                              <p>
+                                  <select id="self-employed-workers-adress" name="selfEmployedWorkersAdress">
+                                      <option selected disabled> </option>
+                                      <option value="Так">Так</option>
+                                      <option value="Ні">Ні</option>
+                                  </select>
+                              </p>
+                          </label>
+                          <label class="self-employed-workers-register-adress select-self-employed-workers-adress-block select-self-employed-workers-adress-none">
+                              5a) Зазначте Вашу фактичну адресу місця проживання
+                              <p>
+                                  <input id="selfEmployedWorkersActualAddress" type="text">
+                              </p>
+                          </label>
+                          <label>
+                              6) Ваш середньомісячний дохід становить: (обрати відповідь із наступних варіантів):
+                              <p>
+                                  <select id="selfEmployedWorkersMonthlyIncome" name="selfEmployedWorkersMonthlyIncome">
+                                      <option selected disabled> </option>
+                                      <option value="Менше 5 тис.грн">Менше 5 тис.грн</option>
+                                      <option value="від 5 до 20 тис.грн">від 5 до 20 тис.грн</option>
+                                      <option value="понад 20 тис.грн">понад 20 тис.грн</option>
+                                  </select>
+                              </p>
+                          </label>
+                          <label>
+                              7) Зазначте обсяг (в т.ч. очікуваний) надходження коштів та інших цінностей на Ваші рахунки:
+                              <p>
+                                  <select id="selfEmployedWorkersExpectedRevenue" name="selfEmployedWorkersExpectedRevenue">
+                                      <option selected disabled> </option>
+                                      <option value="до 50 тис.грн.">до 50 тис.грн.</option>
+                                      <option value="від 50 до 150 тис.грн.">від 50 до 150 тис.грн.</option>
+                                      <option value="більше 150 тис.грн.">більше 150 тис.грн.</option>
+                                  </select>
+                              </p>
+                          </label>
+                          <label>
+                              8) Чи володієте Ви будь-яким рухомим/нерухомим майном?*
+                              <p>
+                                  <select id="self-employed-workers-property" name="selfEmployedWorkersProperty">
+                                      <option selected disabled> </option>
+                                      <option value="Так">Так</option>
+                                      <option value="Ні">Ні</option>
+                                  </select>
+                              </p>
+                          </label>
+                          <label class="self-employed-workers-maino select-self-employed-workers-maino-block select-self-employed-workers-maino-none">
+                              8a) Якою саме власністю з переліченого ви володієте? (обрати відповідь з наступних варіантів):
+                              <p>
+                                  <select id="selfEmployedWorkersListedProperty" name="selfEmployedWorkersListedProperty">
+                                      <option selected disabled value="неактив"> </option>
+                                      <option value="Земельна ділянка">Земельна ділянка</option>
+                                      <option value="Заміський будинок">Заміський будинок</option>
+                                      <option value="Квартира загал.площею до 100,0кв.м.">Квартира загал.площею до 100,0кв.м.</option>
+                                      <option value="Квартира загал.площею понад 100,0кв.м.">Квартира загал.площею понад 100,0кв.м.</option>
+                                      <option value="Автотранспорт іноземного вир-ва">Автотранспорт іноземного вир-ва</option>
+                                      <option value="Автотранспорт виробництва України">Автотранспорт виробництва України</option>
+                                  </select>
+                              </p>
+                          </label>
+                          <label>
+                              9) Чи маєте Ви відкриті рахунки з перелічених в інших банках?:
+                              <p>
+                                  <select id="selfEmployedWorkersOpenAccounts" name="selfEmployedWorkersOpenAccounts">
+                                      <option selected disabled> </option>
+                                      <option value="Карткові">Карткові</option>
+                                      <option value="Депозитні">Депозитні</option>
+                                      <option value="Кредитні">Кредитні</option>
+                                      <option value="Рахунки в інших банках відсутні">Рахунки в інших банках відсутні</option>
+                                  </select>
+                              </p>
+                          </label>
+                      </form>
+                  </div>
+                  <div class="err-mes">Заповніть будь ласка всі поля</div>
+
+                  <div class="self-employed-workers-question green-button">
+                      Відправити
+                  </div>
+              </div>
+
+              <div class="private-entrepreneur-questions">
+                  <div class="block-private-entrepreneur-questions">
+                      <h5 style="color: red; text-align: center">Приватний підприємець</h5>
+                      <form class="form-private-entrepreneur-questions" name="formPrivateEntrepreneurQuestions">
+                          <label>
+                              1) Зазначте код податкової
+                              <p>
+                                  <input id="privateEntrepreneurTaxCode" type="text">
+                              </p>
+                          </label>
+                          <label>
+                              2) Зазначте дату з якої Ви проводите професійну діяльність
+                              <p>
+                                  <input id="privateEntrepreneurDateStartedProfesion" type="text">
+                              </p>
+                          </label>
+                          <label>
+                              3) Зазначте Ваш сімейний стан (обрати відповідь із наступних варіантів):
+                              <p>
+                                  <select id="privateEntrepreneurStatus" name="private-entrepreneur-status">
+                                      <option selected disabled> </option>
+                                      <option value="Одружений">Одружений</option>
+                                      <option value="Неодружений">Неодружений</option>
+                                      <option value="Вдова">Вдова</option>
+                                      <option value="Розлучений">Розлучений</option>
+                                      <option value="В громадянському шлюбі">В громадянському шлюбі</option>
+                                  </select>
+                              </p>
+                          </label>
+                          <label>
+                              4) Адреса реєстрації співпадає з адресою фактичного проживання?
+                              <p>
+                                  <select id="private-entrepreneur-adress" name="privateEntrepreneurAdress">
+                                      <option selected disabled> </option>
+                                      <option value="Так">Так</option>
+                                      <option value="Ні">Ні</option>
+                                  </select>
+                              </p>
+                          </label>
+                          <label class="private-entrepreneur-adress select-private-entrepreneur-adress-block select-private-entrepreneur-adress-none">
+                              4a) Зазначте Вашу фактичну адресу місця проживання
+                              <p>
+                                  <input id="privateEntrepreneurActualAddress" type="text">
+                              </p>
+                          </label>
+                          <label>
+                              5) Ваш середньомісячний дохід становить: (обрати відповідь із наступних варіантів):
+                              <p>
+                                  <select id="privateEntrepreneurMonthlyIncome" name="privateEntrepreneurMonthlyIncome">
+                                      <option selected disabled> </option>
+                                      <option value="Менше 5 тис.грн">Менше 5 тис.грн</option>
+                                      <option value="від 5 до 20 тис.грн">від 5 до 20 тис.грн</option>
+                                      <option value="понад 20 тис.грн">понад 20 тис.грн</option>
+                                  </select>
+                              </p>
+                          </label>
+                          <label>
+                              6) Зазначте обсяг (в т.ч. очікуваний) надходження коштів та інших цінностей на Ваші рахунки:
+                              <p>
+                                  <select id="privateEntrepreneurExpectedRevenue" name="privateEntrepreneurExpectedRevenue">
+                                      <option selected disabled> </option>
+                                      <option value="до 50 тис.грн.">до 50 тис.грн.</option>
+                                      <option value="від 50 до 150 тис.грн.">від 50 до 150 тис.грн.</option>
+                                      <option value="більше 150 тис.грн.">більше 150 тис.грн.</option>
+                                  </select>
+                              </p>
+                          </label>
+                          <label>
+                              7) Чи володієте Ви будь-яким рухомим/нерухомим майном?*
+                              <p>
+                                  <select id="private-entrepreneur-property" name="privateEntrepreneurProperty">
+                                      <option selected disabled> </option>
+                                      <option value="Так">Так</option>
+                                      <option value="Ні">Ні</option>
+                                  </select>
+                              </p>
+                          </label>
+                          <label class="private-entrepreneur-maino select-private-entrepreneur-maino-block select-private-entrepreneur-maino-none">
+                              7a) Якою саме власністю з переліченого ви володієте? (обрати відповідь з наступних варіантів):
+                              <p>
+                                  <select id="privateEntrepreneurListedProperty" name="privateEntrepreneurListedProperty">
+                                      <option selected disabled value="неактив"> </option>
+                                      <option value="Земельна ділянка">Земельна ділянка</option>
+                                      <option value="Заміський будинок">Заміський будинок</option>
+                                      <option value="Квартира загал.площею до 100,0кв.м.">Квартира загал.площею до 100,0кв.м.</option>
+                                      <option value="Квартира загал.площею понад 100,0кв.м.">Квартира загал.площею понад 100,0кв.м.</option>
+                                      <option value="Автотранспорт іноземного вир-ва">Автотранспорт іноземного вир-ва</option>
+                                      <option value="Автотранспорт виробництва України">Автотранспорт виробництва України</option>
+                                  </select>
+                              </p>
+                          </label>
+                          <label>
+                              8) Чи маєте Ви відкриті рахунки з перелічених в інших банках?:
+                              <p>
+                                  <select id="privateEntrepreneurOpenAccounts" name="privateEntrepreneurOpenAccounts">
+                                      <option selected disabled> </option>
+                                      <option value="Карткові">Карткові</option>
+                                      <option value="Депозитні">Депозитні</option>
+                                      <option value="Кредитні">Кредитні</option>
+                                      <option value="Рахунки в інших банках відсутні">Рахунки в інших банках відсутні</option>
+                                  </select>
+                              </p>
+                          </label>
+                      </form>
+                  </div>
+                  <div class="err-mes">Заповніть будь ласка всі поля</div>
+
+                  <div class="private-entrepreneur-question green-button">
+                      Відправити
+                  </div>
+              </div>
+
+              <div class="unemployed-questions">
+                  <h5 style="text-align: center; color: red">Безробітний</h5>
+                  <p>
+                      Вибачте, але поки що кредитний ліміт не може бути Вам погоджений.
+                      У разі бажання оформити дебетну картку, зверніться будь-ласка до найближчого відділення з паспортом та ІПН
+                  </p>
+
+                  <div onclick="document.location.reload();" class="unemployed-question green-button">
+<!--                      Відправити-->
+                      Завершити
+                  </div>
+              </div>
+
+
+
+
+
+
+              <div class="contact-files-iin">
+                  <form class="contact-files-iin__form">
+
+                      <p><b>Завантажте, будь ласка, Ваші документи:</b></p>
+                      <div class="contact-files-iin__data contact-files-iin__top-line">
+                          <p>Завантажити ІНН</p>
+
+                          <div class="contact-files-iin__data1">
+
+                              <div class="block-input-custom">
+                                  <div class="block-input-custom__input">
+                                        <input title=" " type="file" id="file1"  multiple="multiple" accept=".txt,image/*" required>
+<!--                                      <span id="file1Message"></span>-->
+                                  </div>
+                                  <div class="block-input-custom__text">.jpg, .png</div>
+                              </div>
+                              <p class="error-iin">Виберіть будь ласка файл</p>
+
+
+                          </div>
+
+                      </div>
+                      <div class="line"></div>
+                      <div class="contact-files-iin__button">
+                          Відправити
+
+                      </div>
+                  </form>
+              </div>
+
+              <div class="contact-files">
+                  <form class="contact-files__form">
+
+                      <p><b>Завантажте, будь ласка, Ваші документи:</b></p>
+                      <div class="contact-files__data contact-files__top-line">
+                        <div class="contact-files__data1">
+                            <p class="contact-files__data-text">
+                                Завантажити фото першої сторінки
+                                паспорту або лицьової сторони
+                                ІD-картки
+                            </p>
+
+                            <div class="block-input-custom">
+                                <div class="block-input-custom__input">
+                                    <input title=" " type="file" id="file2"  multiple="multiple" accept=".txt,image/*">
+                                </div>
+                                <div class="block-input-custom__text">.jpg, .png</div>
+                            </div>
+                            <p class="error-file1">Виберіть будь ласка файл</p>
+
+                        </div>
+                        <div class="contact-files__data1">
+                          <p class="contact-files__data-text">
+                              Завантажити фото 2-3 сторінок
+                              паспорту або зворотної сторони
+                              ІD-картки
+                          </p>
+                            <div class="block-input-custom">
+                                <div class="block-input-custom__input">
+                                    <input title=" " type="file" id="file3" multiple="multiple" accept=".txt,image/*">
+                                </div>
+                                <div class="block-input-custom__text">.jpg, .png</div>
+                            </div>
+                            <p class="error-file2">Виберіть будь ласка файл</p>
+
+                        </div>
+                          <div class="contact-files__data1">
+                          <p class="contact-files__data-text">
+                              Завантажити фото 4-5 сторінок
+                              паспорту
+                          </p>
+                            <div class="block-input-custom block-file6">
+                                <div class="block-input-custom__input">
+                                    <input title=" " type="file" id="file6" multiple="multiple" accept=".txt,image/*">
+                                </div>
+                                <div class="block-input-custom__text">.jpg, .png</div>
+                            </div>
+                            <p class="error-file2">Виберіть будь ласка файл</p>
+
+                        </div>
+
+                      </div>
+                      <div class="contact-files__data contact-files__bottom-line">
+                          <div class="contact-files__data1">
+                              <p class="contact-files__data-text">
+                                  Завантажити фото 10-11 сторінок
+                                  паспорту з відміткою місця
+                                  реєстрації
+                              </p>
+
+                              <div class="block-input-custom">
+                                  <div class="block-input-custom__input">
+                                    <input title=" " type="file" id="file4" multiple="multiple" accept=".txt,image/*">
+                                  </div>
+                                  <div class="block-input-custom__text">.jpg, .png</div>
+                              </div>
+                          </div>
+                          <div class="contact-files__data1">
+                              <p class="contact-files__data-text">
+                                  Завантажити фото 12-13 сторінок
+                                  паспорту з відміткою місця
+                                  реєстрації
+                              </p>
+
+                              <div class="block-input-custom">
+                                  <div class="block-input-custom__input">
+                                    <input title=" " type="file" id="file5" multiple="multiple" accept=".txt,image/*">
+                                  </div>
+                                  <div class="block-input-custom__text">.jpg, .png</div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="contact-files__button">
+                          Відправити
+                          <img class="wait" src="img/wait-white.gif"/>
+
+                      </div>
+                  </form>
+              </div>
+
+
+              <div class="confirm">
+
+                  <form class="" name="">
+                      <label>є громадянином та резидентом України;
+                          <input type="checkbox" class="check-radio cheched1" name="t2" value="1">
+                          <span class="checkbox-mod"></span>
+                      </label>
+                      <label>не являюсь податковим резидентом США;
+                          <input type="checkbox" class="check-radio cheched2" name="t2" value="2">
+                          <span class="checkbox-mod"></span>
+                      </label>
+                      <label>
+                          <span>проінформований, що на банк покладено зобов’язання щодо обробки моїх
+                          персональних даних для цілей запобігання та протидії легалізації (відмиванню) доходів,
+                          одержаних злочинним шляхом, фінансуванню тероризму та фінансуванню розповсюдження зброї масового знищення.</span>
+                          <input type="checkbox" class="check-radio cheched3" name="t2" value="3">
+                          <span class="checkbox-mod">
+                                  </span>
+                      </label>
+                  </form>
+
+
+                  <div class="err-mes">Потрібно відмітити всі поля</div>
+
+                  <div class="confirm-button green-button">
+                      Відправити
+                  </div>
+              </div>
+
+              <div class="finish-thanks">
+                  <img src="img/mail.png" alt="">
+                  <br>
+                  <br>
+                  <p>
+<!--                      Дякуємо!-->
+<!--                      <br>-->
+<!--                      Ми відправимо вам на e-mail посилання для проходження відеоверифікації.<br>-->
+<!--                      Для проходження відеоверифікації завантажте, будь-ласка, програму Zoom.-->
+
+<!--                      Найближчим часом очікуйте на ваш e-mail лист з посиланням для проходження відеоверифікації.<br>-->
+<!--                      Для проходження відеоверифікації необхідно мати Web-камеру та завантажити програму ZOOM на ваш комп’ютер.-->
+
+                      Дякуємо!
+                      <br>
+                      Для проходження відеоверифікації завантажте, будь ласка,<br>
+                      програму ZOOM та обов'язково зареєструйтеся в ній<br>
+                  <span class="thanks-client__download">
+                      <!--                        Завантажуйте додаток за посиланням:<br>-->
+                      <a target="_blank" href="https://zoom.us/download"> https://zoom.us/download</a>
+
+                  </span>
+                      <br>
+<!--                      Ми відправимо на Ваш e-mail посилання для проходження відеоверифікації-->
+                      Найближчим часом Вам зателефонує співробітник банку для узгодження<br> прийнятного для Вас часу проведення відеоверифікації.
+                      <br>
+                      <br>
+                      Чекайте на дзвінок!
+
+
+
+                  </p>
+                    <br>
+                  <button onclick="location.reload()" class="thanks__button" type="submit">
+                      Повернутись на головну
+                  </button>
+              </div>
+
+
+          </div>
+    </div>
+
+
+
+    <div class="wrapper line-top">
+    </div>
+    <div class="title-block">
+        <br>
+    </div>
+    <div class="wrapper block-icons">
+<!--        <div class="flex-container icons-container icons-container2">-->
+        <div class="flex-container icons-container2">
+                <table class="block-icons__table">
+                    <tr>
+                        <td>
+                            <a target="_blank" href="https://www.ukrgasbank.com/private/cliet_info/">
+                                <img src="img/icons1_ecocredit.png" alt="gray-icon">
+                            </a>
+                        </td>
+                        <td>
+                            <a target="_blank" href="https://www.ukrgasbank.com/private/cliet_info/">
+                                <h4 class="text-icon-title12">
+                                    ІСТОТНІ УМОВИ
+                                </h4>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a target="_blank" href="https://www.ukrgasbank.com/private/card_and_current_accounts/cards/public/">
+
+                                <img src="img/icons2_ecocredit.png" alt="gray-icon">
+
+                            </a>
+                        </td>
+                        <td>
+                            <a target="_blank" href="https://www.ukrgasbank.com/private/card_and_current_accounts/cards/public/">
+
+                                <h4 class="text-icon-title">
+                                    ПРАВИЛА ВІДКРИТТЯ ТА  ОБСЛУГОВУВАННЯ РАХУНКІВ ФІЗИЧНИХ ОСІБ ТА НАДАННЯ ПОСЛУГ ЗА ПЛАТІЖНИМИ КАРТКАМИ АБ «УКРГАЗБАНК»
+                                </h4>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a target="_blank" href="https://www.ukrgasbank.com/ru/private/card_and_current_accounts/domovychok#calk">
+
+                                <img src="img/icons3_ecocredit.png" alt="gray-icon">
+                            </a>
+                        </td>
+                        <td>
+                            <a target="_blank" href="https://www.ukrgasbank.com/ru/private/card_and_current_accounts/domovychok#calk">
+
+                                <h4 class="text-icon-title1">
+                                    КАЛЬКУЛЯТОР ЗАГАЛЬНОЇ ВАРТОСТІ
+                                </h4>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a target="_blank" href="https://www.ukrgasbank.com/private/card_and_current_accounts/cards/tariffs/">
+
+                                <img src="img/icons4_ecocredit.png" alt="gray-icon">
+                            </a>
+                        </td>
+                        <td>
+                            <a target="_blank" href="https://www.ukrgasbank.com/private/card_and_current_accounts/cards/tariffs/">
+
+                                <h4 class="text-icon-title1">
+                                    ТАРИФИ
+                                </h4>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a target="_blank" href="https://www.ukrgasbank.com/private/card_and_current_accounts/domovychok#alert">
+
+                                <img src="img/icons5_ecocredit.png" alt="gray-icon">
+                            </a>
+                        </td>
+                        <td>
+                            <a target="_blank" href="https://www.ukrgasbank.com/private/card_and_current_accounts/domovychok#alert">
+
+                                <h4 class="text-icon-title1">
+                                    ДОДАТКОВІ ВІДОМОСТІ (про можливість та умови дострокового розірвання договору,
+                                    можливі наслідки в разі користування банківською послугою або невиконання обов'язків згідно умов договору)
+                                </h4>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+<!--            <div>-->
+<!--                <a target="_blank" href="https://www.ukrgasbank.com/private/cliet_info/">-->
+<!--                    <img src="img/icons1_ecocredit.png" alt="gray-icon">-->
+<!--                    <h4 class="text-icon-title12">-->
+<!--                        ІСТОТНІ УМОВИ-->
+<!--                    </h4>-->
+<!--                </a>-->
+<!--            </div>-->
+<!--            <div style="position: relative">-->
+<!--                <a target="_blank" href="https://www.ukrgasbank.com/private/card_and_current_accounts/cards/public/">-->
+
+<!--                    <img src="img/icons2_ecocredit.png" alt="gray-icon">-->
+<!--                    <h4 class="text-icon-title">-->
+<!--                        ПРАВИЛА ВІДКРИТТЯ ТА  ОБСЛУГОВУВАННЯ РАХУНКІВ ФІЗИЧНИХ ОСІБ ТА НАДАННЯ ПОСЛУГ ЗА ПЛАТІЖНИМИ КАРТКАМИ АБ «УКРГАЗБАНК»-->
+<!--                    </h4>-->
+<!--                </a>-->
+
+<!--            </div>-->
+<!--            <div style="position: relative">-->
+<!--                <a target="_blank" href="https://www.ukrgasbank.com/ru/private/card_and_current_accounts/domovychok#calk">-->
+
+<!--                    <img src="img/icons3_ecocredit.png" alt="gray-icon">-->
+<!--                    <h4 class="text-icon-title1">-->
+<!--                        КАЛЬКУЛЯТОР ЗАГАЛЬНОЇ ВАРТОСТІ-->
+<!--                    </h4>-->
+<!--                </a>-->
+
+<!--            </div>-->
+        </div>
+    </div>
+
+
+    <div class="wrapper line-top">
+    </div>
+    <div class="title-block one-row">
+
+        <p class="title-block__social-title">БУДЬТЕ З НАМИ</p>
+        <div class="title-block__icons">
+          <a href="https://www.facebook.com/Ukrgasbank/" target="_blank">
+            <img src="img/icon-fb.png" alt="facebook УКРГАЗБАНК"/>
+          </a>
+          <a href="https://www.instagram.com/ukrgasbank_ecobank/" target="_blank">
+            <img src="img/icon-insta.png" alt="інстагрм УКРГАЗБАНК"/>
+          </a>
+          <a href="https://t.me/ekobank" target="_blank">
+            <img src="img/icon-telega.png" alt="телеграм УКРГАЗБАНК"/>
+          </a>
+          <a href="http://linkedin.com/in/укргазбанк-екобанк-185729198" target="_blank">
+           <img src="img/icon-in.png" alt="linkedin УКРГАЗБАНК"/>
+          </a>
+          <a href="https://www.youtube.com/channel/UC60DRqbFw8bzBZ-cdZk4Obg" target="_blank">
+            <img src="img/icon-youtube.png" alt="ютуб канал УКРГАЗБАНК"/>
+          </a>
+        </div>
+
+    </div>
+
+
+    <footer>
+      <div class="wrapper">
+        <div class="footer__block">
+          <div class="footer__info1">
+            <p>
+            *Відсотки не нараховуються протягом 30 днів. При непогашенні заборгованості протягом пільгового періоду, проценти за користування
+            кредитним лімітом почнуть нараховуватися, починаючи з 31 дня на залишок заборгованості, який залишився на 30 день.
+            </p>
+
+              <p class="politics"><a href="https://www.ukrgasbank.com/confidence">Політика конфіденційності</a></p>
+
+              <span>
+              <span>
+              <input style="display: none" id="phone-client" type="text" placeholder="" name="phone" value="" />
+              <input style="display: none" id="answer-api-phone" type="text" placeholder="" name="phone" value="" />
+              <input style="display: none" id="answer-api-code" type="text" placeholder="" name="phone" value="" />
+              <input style="display: none" id="people-code" type="text" placeholder="" name="phone" value="" />
+              <input style="display: none" id="operator" type="text" placeholder="" name="phone" value="" />
+              <input style="display: none" id="iin" type="text" placeholder="" name="phone" value="" />
+          </span>
+          </span>
+
+          </div>
+
+          <div class="footer__info2">
+            <div class="footer__info2-all">
+
+            <a href="tel:0800309000">
+            <p>
+              <img src="img/phone.png" alt=""/>
+              <span class="phone-number">0 (800) 309 000</span>
+            </p>
+            </a>
+            <p class="footer__phone-info">(Безкоштовно в межах України)</p>
+            <a href="https://www.ukrgasbank.com/" target="_blank"> <p class="site-url">www.ukrgasbank.com</p></a>
+            <p class="liscence-nby">Ліцензія НБУ № 123 від 06.10.2011 року</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+    <script src="js/circle-animation.js"></script>
+    <script src="js/jqeury.validate.min.js"></script>
+    <script src="js/main.js"></script>
+  <script>
+      $(document).ready(function() {
+          $('#file1').inputFileText({
+              text: 'Select File'
+          });
+      });
+  </script>
+
+  </body>
+</html>
